@@ -32,7 +32,9 @@ Con los valores del estado financiero se puede revisar diferentes indicadores y 
 
 # Investigación SGBD
 
+Un sistema gestor de base de datos (SGBD) o Database Management System (DBMS) es un conjunto de programas invisibles para el usuario final con el que se administra y gestiona la información que incluye una base de datos.
 
+Los gestores de datos o gestores de base de datos permiten administrar todo acceso a la base de datos, pues tienen el objetivo de servir de interfaz entre esta, el usuario y las aplicaciones.
 
 # Bibliografía
 **Portafolio de Información**. (s/f). Gob.mx. Recuperado el 25 de mayo de 2025, de https://portafolioinfo.cnbv.gob.mx/Paginas/Inicio.aspx
