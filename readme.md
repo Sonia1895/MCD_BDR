@@ -5,7 +5,7 @@
 
 ### Bases de datos relacionales
 
-Este repositorio se creó para la materia de base de datos relacionales, que imparte el Dr. Alberto Benavides
+Este repositorio se creó para la materia de base de datos relacionales, que imparte el Dr. Alberto Benavides.
 
 #### Evidencias:
 - [Tarea 1]
