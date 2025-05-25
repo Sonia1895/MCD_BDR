@@ -1,4 +1,4 @@
-# Desripción de datos y sus relaciones no estructuradas.
+# Desripción de base de datos seleccionada
 
 Se selecciono la base de datos **Serie Historica Banca múltiple** proporcionada por la Comisión Nacional Bancaria y de Valores (CNBV) y actualizada a marzo de 2025. Esta base de datos es fundamental porque contiene la situación financiera y el estado de resultados de las entidades reguladas por la CNBV.
 
@@ -30,7 +30,7 @@ Con los valores del estado financiero se puede revisar diferentes indicadores y 
 - Índice de cobertura: Mide qué tan bien está "cubierta" la entidad con reservas para posibles créditos incobrables.
 
 
-
+# Investigación SGBD
 
 
 
@@ -40,3 +40,5 @@ Con los valores del estado financiero se puede revisar diferentes indicadores y 
 **Power BI report**. (s/f). Powerbi.com. Recuperado el 25 de mayo de 2025, de https://app.powerbi.com/view?r=eyJrIjoiMGI0YWE0NzktYWQyYi00ZWFmLTllMWUtNDllZmY1OTc2ZGU0IiwidCI6IjVlMmM0OTc3LTEwN2QtNDBhMy04YWY3LTcwMDc0ODFhNjBkNCIsImMiOjR9
 
 **DISPOSICIONES DE CARÁCTER GENERAL APLICABLES A LAS INSTITUCIONES DE CRÉDITO**. Gob.mx. Recuperado el 25 de mayo de 2025, de https://www.cnbv.gob.mx/Normatividad/Disposiciones%20de%20car%C3%A1cter%20general%20aplicables%20a%20las%20instituciones%20de%20cr%C3%A9dito.pdf
+
+**Pérez, S. D.** (2021, septiembre 8). Gestor de Base de datos: Qué es, Funcionalidades y Ejemplos. Intelequia. https://intelequia.com/es/blog/post/gestor-de-base-de-datos-qu%C3%A9-es-funcionalidades-y-ejemplos
