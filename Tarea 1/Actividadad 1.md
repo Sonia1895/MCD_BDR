@@ -37,9 +37,9 @@ Un sistema gestor de base de datos (SGBD) o Database Management System (DBMS) es
 Los gestores de datos o gestores de base de datos permiten administrar todo acceso a la base de datos, pues tienen el objetivo de servir de interfaz entre esta, el usuario y las aplicaciones.
 
 En pocas palabras, el gestor de base de datos controla cualquier operación ejecutada por el usuario contra la BBDD. Para desarrollar esta función, es normal que se requieran herramientas específicas, como por ejemplo sistemas de búsqueda y de generación de informes, así como distintas aplicaciones. Los gestores de base de datos también permiten lo siguiente:
-● Que las interacciones con cualquier base de datos gestionada puedan desarrollarse siempre separadamente a los programas o aplicaciones que los gestionan.
-● La manipulación de bases de datos, garantizando su seguridad, integridad y consistencia.
-● La definición de bases de datos a diferentes niveles de abstracción.
+- Que las interacciones con cualquier base de datos gestionada puedan desarrollarse siempre separadamente a los programas o aplicaciones que los gestionan.
+- La manipulación de bases de datos, garantizando su seguridad, integridad y consistencia.
+- La definición de bases de datos a diferentes niveles de abstracción.
 
 Un SGBD permite definir los datos, además de manipularlos, aplicar medidas de seguridad e integridad y recuperarlos o restaurarlos después de producirse algún tipo de fallo. Algunas de las funciones principales de los gestores de bases de datos son las siguientes:
 
