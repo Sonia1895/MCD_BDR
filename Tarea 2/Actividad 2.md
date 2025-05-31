@@ -15,9 +15,9 @@ graph TD
 
     %% Definición de Estilos Personalizados
     classDef entidad fill:#add8e6,stroke:#333,stroke-width:2px,rx:5px,ry:5px;
-    classDef relacion fill:#ffb3ba,stroke:#333,stroke-width:2px,shape:rhombus;
-    classDef atributo fill:#c2e0c6,stroke:#333,stroke-width:2px,shape:ellipse; 
-    classDef dominio fill:#d8c2e6,stroke:#333,stroke-width:2px,shape:hexagon; 
+    classDef relacion fill:#ffb3ba,stroke:#333,stroke-width:2px;
+    classDef atributo fill:#c2e0c6,stroke:#333,stroke-width:2px; 
+    classDef dominio fill:#d8c2e6,stroke:#333,stroke-width:2px; 
 
     %% Entidades (Rectángulos)
     Serie_Historica_Banca_Multiple[Serie Histórica Banca Múltiple]:::entidad
@@ -29,47 +29,46 @@ graph TD
 
     %% Atributos (Óvalos) y sus Conexiones a Entidades
     %% Serie_Historica_Banca_Multiple Atributos
-    Serie_Historica_Banca_Multiple --- SHBM_sector_attr((sector)):::atributo
-    Serie_Historica_Banca_Multiple --- SHBM_idconcepto_attr((idconcepto)):::atributo
-    Serie_Historica_Banca_Multiple --- SHBM_entidad_attr((entidad)):::atributo
-    Serie_Historica_Banca_Multiple --- SHBM_periodo_attr((periodo)):::atributo
-    Serie_Historica_Banca_Multiple --- SHBM_saldo_attr((saldo)):::atributo
-    Serie_Historica_Banca_Multiple --- SHBM_valor_attr((valor)):::atributo
+    Serie_Historica_Banca_Multiple --- SHBM_sector_attr([sector]):::atributo
+    Serie_Historica_Banca_Multiple --- SHBM_idconcepto_attr([idconcepto]):::atributo
+    Serie_Historica_Banca_Multiple --- SHBM_entidad_attr([entidad]):::atributo
+    Serie_Historica_Banca_Multiple --- SHBM_periodo_attr([periodo]):::atributo
+    Serie_Historica_Banca_Multiple --- SHBM_saldo_attr([saldo]):::atributo
+    Serie_Historica_Banca_Multiple --- SHBM_valor_attr([valor]):::atributo
 
     %% Numero_Tarjetas_Credito_Institucion Atributos
-    Numero_Tarjetas_Credito_Institucion --- NTCI_cve_institucion_attr((cve_institucion)):::atributo
-    Numero_Tarjetas_Credito_Institucion --- NTCI_cve_periodo_attr((cve_periodo)):::atributo
-    Numero_Tarjetas_Credito_Institucion --- NTCI_total_attr((total)):::atributo
+    Numero_Tarjetas_Credito_Institucion --- NTCI_cve_institucion_attr([cve_institucion]):::atributo
+    Numero_Tarjetas_Credito_Institucion --- NTCI_cve_periodo_attr([cve_periodo]):::atributo
+    Numero_Tarjetas_Credito_Institucion --- NTCI_total_attr([total]):::atributo
 
     %% Distribucion_Tarjetas_Perdida_Esperada Atributos
-    Distribucion_Tarjetas_Perdida_Esperada --- DTPE_cve_institucion_attr((cve_institucion)):::atributo
-    Distribucion_Tarjetas_Perdida_Esperada --- DTPE_cve_periodo_attr((cve_periodo)):::atributo
-    Distribucion_Tarjetas_Perdida_Esperada --- DTPE_rango_perdida_esperada_attr((rango_perdida_esperada)):::atributo
-    Distribucion_Tarjetas_Perdida_Esperada --- DTPE_total_attr((total)):::atributo
+    Distribucion_Tarjetas_Perdida_Esperada --- DTPE_cve_institucion_attr([cve_institucion]):::atributo
+    Distribucion_Tarjetas_Perdida_Esperada --- DTPE_cve_periodo_attr([cve_periodo]):::atributo
+    Distribucion_Tarjetas_Perdida_Esperada --- DTPE_rango_perdida_esperada_attr([rango_perdida_esperada]):::atributo
+    Distribucion_Tarjetas_Perdida_Esperada --- DTPE_total_attr([total]):::atributo
 
     %% Distribucion_Tarjetas_Pago_Realizado Atributos
-    Distribucion_Tarjetas_Pago_Realizado --- DTPR_cve_institucion_attr((cve_institucion)):::atributo
-    Distribucion_Tarjetas_Pago_Realizado --- DTPR_cve_periodo_attr((cve_periodo)):::atributo
-    Distribucion_Tarjetas_Pago_Realizado --- DTPR_rango_pago_realizado_vs_no_intereses_attr((rango_pago_realizado_vs_no_intereses)):::atributo
-    Distribucion_Tarjetas_Pago_Realizado --- DTPR_total_attr((total)):::atributo
+    Distribucion_Tarjetas_Pago_Realizado --- DTPR_cve_institucion_attr([cve_institucion]):::atributo
+    Distribucion_Tarjetas_Pago_Realizado --- DTPR_cve_periodo_attr([cve_periodo]):::atributo
+    Distribucion_Tarjetas_Pago_Realizado --- DTPR_rango_pago_realizado_vs_no_intereses_attr([rango_pago_realizado_vs_no_intereses]):::atributo
+    Distribucion_Tarjetas_Pago_Realizado --- DTPR_total_attr([total]):::atributo
 
     %% Catalogo_Instituciones Atributos
-    Catalogo_Instituciones --- CI_cve_institucion_attr((cve_institucion)):::atributo
-    Catalogo_Instituciones --- CI_nombre_institucion_attr((nombre_institucion)):::atributo
+    Catalogo_Instituciones --- CI_cve_institucion_attr([cve_institucion]):::atributo
+    Catalogo_Instituciones --- CI_nombre_institucion_attr([nombre_institucion]):::atributo
 
     %% Catalogo_Conceptos Atributos
-    Catalogo_Conceptos --- CC_idconcepto_attr((idconcepto)):::atributo
-    Catalogo_Conceptos --- CC_nombre_concepto_attr((nombre_concepto)):::atributo
-    Catalogo_Conceptos --- CC_descripcion_concepto_attr((descripcion_concepto)):::atributo
+    Catalogo_Conceptos --- CC_idconcepto_attr([idconcepto]):::atributo
+    Catalogo_Conceptos --- CC_nombre_concepto_attr([nombre_concepto]):::atributo
+    Catalogo_Conceptos --- CC_descripcion_concepto_attr([descripcion_concepto]):::atributo
 
     %% Dominios (Hexágonos con Tipo de Dato) y sus Conexiones a Atributos
     %% Los dominios se conectan a los atributos a los que "dan su tipo"
 
     %% DECLARACIÓN EXPLICITA DE LOS NODOS DOMINIO (para asegurar que están definidos antes de usarse)
-    DOM_string{string}:::dominio
-    DOM_Texto{Texto}:::dominio
-    DOM_Numerico{Numérico}:::dominio
-    DOM_int{int}:::dominio
+    DOM_Texto{{Texto}}:::dominio
+    DOM_Numerico{{Numérico}}:::dominio
+    DOM_int{{int}}:::dominio
 
 
     SHBM_sector_attr --- DOM_Texto
