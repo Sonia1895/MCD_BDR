@@ -7,7 +7,7 @@
 title: Información CNBV Banca Múltiple 
 ---
 graph TD
-    %% DIAGRAMA DE ENTIDAD-RELACIÓN ADAPTADO
+    %% DIAGRAMA DE ENTIDAD-RELACIÓN 
     %% Entidades: Rectángulos
     %% Relaciones: Rombos
     %% Atributos: Óvalos (solo el nombre del atributo)
