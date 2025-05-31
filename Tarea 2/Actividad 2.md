@@ -1,7 +1,6 @@
 # Diagrama entidad-relación
 ## En el diagrama se incluye los niveles entidad, atributos, dominio y relación
 
-
 ```mermaid
 ---
 title: Información Banca Múltiple
@@ -16,8 +15,8 @@ graph TD
     %% Definición de Estilos Personalizados
     classDef entidad fill:#add8e6,stroke:#333,stroke-width:2px,rx:5px,ry:5px;
     classDef relacion fill:#ffb3ba,stroke:#333,stroke-width:2px,shape:rhombus;
-    classDef atributo fill:#c2e0c6,stroke:#333,stroke-width:2px,shape:ellipse; %% Atributos en óvalos
-    classDef dominio fill:#d8c2e6,stroke:#333,stroke-width:2px,shape:hexagon; %% Dominios en hexágonos (con un color ligeramente diferente para distinguirlos)
+    classDef atributo fill:#c2e0c6,stroke:#333,stroke-width:2px,shape:ellipse; 
+    classDef dominio fill:#d8c2e6,stroke:#333,stroke-width:2px,shape:hexagon; 
 
     %% Entidades (Rectángulos)
     Serie_Historica_Banca_Multiple[Serie Histórica Banca Múltiple]:::entidad
@@ -29,7 +28,6 @@ graph TD
 
     %% Atributos (Óvalos) y sus Conexiones a Entidades
     %% Serie_Historica_Banca_Multiple Atributos
-    Serie_Historica_Banca_Multiple --- SHBM_id_registro_attr((id_registro)):::atributo
     Serie_Historica_Banca_Multiple --- SHBM_sector_attr((sector)):::atributo
     Serie_Historica_Banca_Multiple --- SHBM_idconcepto_attr((idconcepto)):::atributo
     Serie_Historica_Banca_Multiple --- SHBM_entidad_attr((entidad)):::atributo
@@ -38,20 +36,17 @@ graph TD
     Serie_Historica_Banca_Multiple --- SHBM_valor_attr((valor)):::atributo
 
     %% Numero_Tarjetas_Credito_Institucion Atributos
-    Numero_Tarjetas_Credito_Institucion --- NTCI_id_registro_attr((id_registro)):::atributo
     Numero_Tarjetas_Credito_Institucion --- NTCI_cve_institucion_attr((cve_institucion)):::atributo
     Numero_Tarjetas_Credito_Institucion --- NTCI_cve_periodo_attr((cve_periodo)):::atributo
     Numero_Tarjetas_Credito_Institucion --- NTCI_total_attr((total)):::atributo
 
     %% Distribucion_Tarjetas_Perdida_Esperada Atributos
-    Distribucion_Tarjetas_Perdida_Esperada --- DTPE_id_registro_attr((id_registro)):::atributo
     Distribucion_Tarjetas_Perdida_Esperada --- DTPE_cve_institucion_attr((cve_institucion)):::atributo
     Distribucion_Tarjetas_Perdida_Esperada --- DTPE_cve_periodo_attr((cve_periodo)):::atributo
     Distribucion_Tarjetas_Perdida_Esperada --- DTPE_rango_perdida_esperada_attr((rango_perdida_esperada)):::atributo
     Distribucion_Tarjetas_Perdida_Esperada --- DTPE_total_attr((total)):::atributo
 
     %% Distribucion_Tarjetas_Pago_Realizado Atributos
-    Distribucion_Tarjetas_Pago_Realizado --- DTPR_id_registro_attr((id_registro)):::atributo
     Distribucion_Tarjetas_Pago_Realizado --- DTPR_cve_institucion_attr((cve_institucion)):::atributo
     Distribucion_Tarjetas_Pago_Realizado --- DTPR_cve_periodo_attr((cve_periodo)):::atributo
     Distribucion_Tarjetas_Pago_Realizado --- DTPR_rango_pago_realizado_vs_no_intereses_attr((rango_pago_realizado_vs_no_intereses)):::atributo
@@ -75,7 +70,7 @@ graph TD
     DOM_Numerico{Numérico}:::dominio
     DOM_int{int}:::dominio
 
-    SHBM_id_registro_attr --- DOM_string
+
     SHBM_sector_attr --- DOM_Texto
     SHBM_idconcepto_attr --- DOM_Texto
     SHBM_entidad_attr --- DOM_Texto
@@ -83,18 +78,15 @@ graph TD
     SHBM_saldo_attr --- DOM_Numerico
     SHBM_valor_attr --- DOM_Numerico
 
-    NTCI_id_registro_attr --- DOM_string
     NTCI_cve_institucion_attr --- DOM_Texto
     NTCI_cve_periodo_attr --- DOM_Numerico
     NTCI_total_attr --- DOM_Numerico
 
-    DTPE_id_registro_attr --- DOM_string
     DTPE_cve_institucion_attr --- DOM_Texto
     DTPE_cve_periodo_attr --- DOM_Numerico
     DTPE_rango_perdida_esperada_attr --- DOM_int
     DTPE_total_attr --- DOM_Numerico
 
-    DTPR_id_registro_attr --- DOM_string
     DTPR_cve_institucion_attr --- DOM_Texto
     DTPR_cve_periodo_attr --- DOM_Numerico
     DTPR_rango_pago_realizado_vs_no_intereses_attr --- DOM_int
