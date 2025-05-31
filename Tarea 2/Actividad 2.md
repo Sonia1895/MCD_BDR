@@ -1,4 +1,5 @@
 # Diagrama entidad-relación
+
 ## En el diagrama se incluye los niveles entidad, atributos, dominio y relación
 
 ```mermaid
