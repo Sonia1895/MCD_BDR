@@ -10,14 +10,14 @@ graph TD
     %% DIAGRAMA DE ENTIDAD-RELACIÓN ADAPTADO
     %% Entidades: Rectángulos
     %% Relaciones: Rombos
-    %% Atributos: Ovalos (solo el nombre del atributo)
+    %% Atributos: Óvalos (solo el nombre del atributo)
     %% Dominios: Hexágonos (el tipo de dato asociado a un atributo)
 
     %% Definición de Estilos Personalizados
     classDef entidad fill:#add8e6,stroke:#333,stroke-width:2px,rx:5px,ry:5px;
     classDef relacion fill:#ffb3ba,stroke:#333,stroke-width:2px,shape:rhombus;
-    classDef atributo fill:#c2e0c6,stroke:#333,stroke-width:2px,shape:ellipse; %% Atributos en óvalos
-    classDef dominio fill:#d8c2e6,stroke:#333,stroke-width:2px,shape:hexagon; %% Dominios en hexágonos (con un color ligeramente diferente para distinguirlos)
+    classDef atributo fill:#c2e0c6,stroke:#333,stroke-width:2px,shape:ellipse; 
+    classDef dominio fill:#d8c2e6,stroke:#333,stroke-width:2px,shape:hexagon; 
 
     %% Entidades (Rectángulos)
     Serie_Historica_Banca_Multiple[Serie Histórica Banca Múltiple]:::entidad
@@ -74,6 +74,7 @@ graph TD
     DOM_Texto{Texto}:::dominio
     DOM_Numerico{Numérico}:::dominio
     DOM_int{int}:::dominio
+
 
     SHBM_id_registro_attr --- DOM_string
     SHBM_sector_attr --- DOM_Texto
