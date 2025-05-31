@@ -1,3 +1,7 @@
+# Diagrama entidad-relación
+## En el diagrama se incluye los niveles entidad, atributos, dominio y relación
+
+
 ```mermaid
 ---
 title: Información Banca Múltiple
@@ -5,7 +9,6 @@ title: Información Banca Múltiple
 erDiagram
     %% Entidades Principales
     Serie_Historica_Banca_Multiple {
-        string id_registro PK "Clave primaria para esta tabla"
         string sector
         string idconcepto FK "Referencia al Catalogo_Conceptos"
         string entidad FK "Referencia al Catalogo_Instituciones"
@@ -15,14 +18,12 @@ erDiagram
     }
 
     Numero_Tarjetas_Credito_Institucion {
-        string id_registro PK "Clave primaria para esta tabla"
         string cve_institucion FK "Referencia al Catalogo_Instituciones"
         numeric cve_periodo
         numeric total
     }
 
     Distribucion_Tarjetas_Perdida_Esperada {
-        string id_registro PK "Clave primaria para esta tabla"
         string cve_institucion FK "Referencia al Catalogo_Instituciones"
         numeric cve_periodo
         int rango_perdida_esperada
@@ -30,7 +31,6 @@ erDiagram
     }
 
     Distribucion_Tarjetas_Pago_Realizado {
-        string id_registro PK "Clave primaria para esta tabla"
         string cve_institucion FK "Referencia al Catalogo_Instituciones"
         numeric cve_periodo
         int rango_pago_realizado_vs_no_intereses
