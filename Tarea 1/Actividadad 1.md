@@ -1,11 +1,11 @@
 # Desripción de base de datos seleccionada
+Se seleccionó la base de datos basándose en la información proporcionada por la Comisión Nacional Bancaria y de Valores (CNBV) en su portafolio de información, actualizada a marzo de 2025. Esta base de datos es interesante porque contiene datos sobre la situación financiera y el estado de resultados de las entidades reguladas por la CNBV, así como la distribución de los productos de tarjeta de crédito.
 
-Se selecciono la base de datos **Serie Historica Banca múltiple** proporcionada por la Comisión Nacional Bancaria y de Valores (CNBV) y actualizada a marzo de 2025. Esta base de datos es fundamental porque contiene la situación financiera y el estado de resultados de las entidades reguladas por la CNBV.
+Desde la perspectiva de un banco de banca múltiple, esta información es sumamente valiosa. Le permite evaluar su desempeño en relación con el mercado general y entender su posición frente a la competencia. Contar con estos datos facilita la toma de decisiones estratégicas informadas.
 
-Desde la perspectiva de un banco de banca múltiple, esta información es sumamente valiosa. Ya que le permite evaluar su desempeño en relación con el mercado general y entender su posición frente a la competencia. Contar con estos datos les facilita la toma de decisiones estratégicas informadas.
+La base de datos contiene las siguientes entidades y atributos variables:
 
-La base principal que se usara contiene las siguientes **variables**:
-
+- **Serie Historica Banca múltiple**
 |Variable|Tipo de dato
  --- | :---: 
 sector|Texto
@@ -15,20 +15,44 @@ periodo|Númerico
 saldo|Númerico
 valor|Númerico
 
-Además de la base de datos principal, se utilizaran dos bases de datos adicionales que funcionarán como catálogos. Estas son el catálogo de conceptos y el catálogo de instituciones.
+- **Número de tarjetas de crédito por institución**
+|Variable|Tipo de dato
+ --- | :---: 
+cve_institucion|Texto
+cve_periodo|Númerico
+total|Númerico
+
+- **Distribución de tarjetas por pérdida esperada**
+|Variable|Tipo de dato
+ --- | :---: 
+cve_institucion|Texto
+cve_periodo|Númerico
+rango_perdida_esperada|int
+total|Númerico
+
+- **Distribución de tarjetas por porcentaje de pago realizado contra pago para no generar intereses**
+|Variable|Tipo de dato
+ --- | :---: 
+cve_institucion|Texto
+cve_periodo|Númerico
+rango_pago_realizado_vs_no_intereses|int
+total|Númerico
+
+Además de las tablas principales, se utilizarán dos bases de datos adicionales que funcionarán como catálogos: el catálogo de conceptos y el catálogo de instituciones.
 
 El catálogo de conceptos será muy útil para identificar claramente el nombre de cada elemento dentro de los estados financieros. Por ejemplo, en lugar de ver solo un código, se podrá saber que ese código se refiere a "Ingresos por intereses" o "Gastos operativos".
 
-Por su parte, el catálogo de instituciones nos permitirá asociar los códigos de las entidades con sus nombres comerciales, por ejemplo, sabiendo que "040002" corresponde a "Banamex". Ambos catálogos son esenciales para poder entender la información de la base de datos principal de forma clara y directa.
+Por su parte, el catálogo de instituciones permitirá asociar los códigos de las entidades con sus nombres comerciales; por ejemplo, saber que "040002" corresponde a "Banamex". Ambos catálogos son esenciales para entender la información de la base de datos principal de forma clara y directa.
 
-Con los valores del estado financiero se puede revisar diferentes indicadores y su evolución en el tiempo, por mencionar algunos:
+Con los valores del estado financiero, se pueden revisar diferentes indicadores y su evolución en el tiempo. Por mencionar algunos:
 
-- Índice de Morosidad (o Cartera Vencida/Etapa 3): Mide el porcentaje de la cartera que no están siendo pagada a tiempo.
-- $Cartera total: Saldo total (activo) de las entidades en créditos comerciales, consumo e hipotecarios.
-- %Crecimiento anual de las carteras
-- $Utilidad neta
+- Índice de Morosidad (o Cartera Vencida/Etapa 3): Mide el porcentaje de la cartera que no se está pagando a tiempo.
+- Cartera total: Saldo total (activo) de las entidades en créditos comerciales, de consumo e hipotecarios.
+- % Crecimiento anual de las carteras
+- Utilidad neta
 - Índice de cobertura: Mide qué tan bien está "cubierta" la entidad con reservas para posibles créditos incobrables.
 
+Y con la información relacionada con las tarjetas de crédito, se puede vincular a cada institución bancaria la cantidad de tarjetas de crédito, así como el comportamiento de estas en sus pagos exigibles y niveles de pérdida esperada (reservas).
 
 # Investigación SGBD
 
