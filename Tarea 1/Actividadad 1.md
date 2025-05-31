@@ -6,16 +6,18 @@ Desde la perspectiva de un banco de banca múltiple, esta información es sumame
 La base de datos contiene las siguientes entidades y atributos variables:
 
 - **Serie Historica Banca múltiple**
-|Variable|Tipo de dato
- --- | :---: 
-sector|Texto
-idconcepto|Texto
-entidad|Texto
-periodo|Númerico
-saldo|Númerico
-valor|Númerico
+
+|Variable|Tipo de dato|
+| --- | :---: |
+|sector|Texto|
+|idconcepto|Texto|
+|entidad|Texto|
+|periodo|Númerico|
+|saldo|Númerico|
+|valor|Númerico|
 
 - **Número de tarjetas de crédito por institución**
+
 |Variable|Tipo de dato
  --- | :---: 
 cve_institucion|Texto
@@ -23,6 +25,7 @@ cve_periodo|Númerico
 total|Númerico
 
 - **Distribución de tarjetas por pérdida esperada**
+
 |Variable|Tipo de dato
  --- | :---: 
 cve_institucion|Texto
@@ -31,6 +34,7 @@ rango_perdida_esperada|int
 total|Númerico
 
 - **Distribución de tarjetas por porcentaje de pago realizado contra pago para no generar intereses**
+
 |Variable|Tipo de dato
  --- | :---: 
 cve_institucion|Texto
