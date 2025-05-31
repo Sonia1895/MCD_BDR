@@ -10,7 +10,7 @@ graph TD
     %% DIAGRAMA DE ENTIDAD-RELACIÓN ADAPTADO
     %% Entidades: Rectángulos
     %% Relaciones: Rombos
-    %% Atributos: Óvalos (solo el nombre del atributo)
+    %% Atributos: Ovalos (solo el nombre del atributo)
     %% Dominios: Hexágonos (el tipo de dato asociado a un atributo)
 
     %% Definición de Estilos Personalizados
