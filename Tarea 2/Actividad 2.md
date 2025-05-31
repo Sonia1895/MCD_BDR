@@ -4,7 +4,7 @@
 
 ```mermaid
 ---
-title: Información Banca Múltiple
+title: Información CNBV Banca Múltiple 
 ---
 graph TD
     %% DIAGRAMA DE ENTIDAD-RELACIÓN ADAPTADO
