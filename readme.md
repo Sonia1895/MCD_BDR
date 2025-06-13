@@ -9,6 +9,6 @@ Este repositorio se creó para la materia de base de datos relacionales, que imp
 
 #### Evidencias:
 - [Tarea 1](/Tarea%201/Actividadad%201.md)
-- [Tarea 2](/Tarea%201/Actividadad%202.md)
+- [Tarea 2](/Tarea%202/Actividadad%202.md)
 
 
