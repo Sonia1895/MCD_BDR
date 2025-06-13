@@ -77,7 +77,7 @@ erDiagram
     Serie_Historica_Banca_Multiple ||--o{ Numero_Tarjetas_Credito_Institucion : "relaciona por Institución y Periodo"
     Serie_Historica_Banca_Multiple ||--o{ Distribucion_Tarjetas_Perdida_Esperada : "relaciona por Institución y Periodo"
     Serie_Historica_Banca_Multiple ||--o{ Distribucion_Tarjetas_Pago_Realizado : "relaciona por Institución y Periodo"
-``
+```
 
 # Ejemplos de operadores de álgebra relacional
 
