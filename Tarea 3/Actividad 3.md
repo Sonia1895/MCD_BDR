@@ -1,6 +1,8 @@
 # Diagrama de relación
 
 ## Este sería el diagrama relacional
+
+```mermaid
 ---
 title: Diagrama de relación
 ---
