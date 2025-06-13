@@ -1,7 +1,9 @@
 # Diagrama de relación
 
 ## Este sería el diagrama relacional
-
+---
+title: Diagrama de relación
+---
 erDiagram
     %% Entidades
     %% Atributos con KEY indican PK, y atributos con FK indican Foreign Key
