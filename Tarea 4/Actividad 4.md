@@ -1,6 +1,6 @@
 # Código utilizado para crear las tablas en un esquema (que es como una base de datos)
 
--- CREAR TABLAS EN EL ESQUEMA PUBLIC (QUE PODRIAMOS INTERPRETAR COMO UNA DE BD)
+## CREAR TABLAS EN EL ESQUEMA PUBLIC (QUE PODRIAMOS INTERPRETAR COMO UNA DE BD)
 
 ------------------------------------------------
 -- CARGAR CATALOGO DE ENTIDADES
