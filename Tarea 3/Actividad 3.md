@@ -13,33 +13,33 @@ erDiagram
 
     %% Entidad Serie_Historica_Banca_Multiple
     Serie_Historica_Banca_Multiple {
-        string sector PK
-        string idconcepto PK, FK "idconcepto"
+        int sector PK
+        int idconcepto PK, FK "idconcepto"
         string entidad PK, FK "cve_institucion"
-        int periodo PK, FK "cve_periodo"
+        int periodo PK
         int saldo PK
         numeric valor
     }
 
-    %% Entidad Numero_Tarjetas_Credito_Institucion
+    %% Entidad c
     Numero_Tarjetas_Credito_Institucion {
-        string cve_institucion PK, FK "cve_institucion"
-        int cve_periodo PK, FK "cve_periodo"
+        string cve_institucion PK
+        int cve_periodo PK
         numeric total
     }
 
     %% Entidad Distribucion_Tarjetas_Perdida_Esperada
     Distribucion_Tarjetas_Perdida_Esperada {
-        string cve_institucion PK, FK "cve_institucion"
-        int cve_periodo PK, FK "cve_periodo"
+        string cve_institucion PK
+        int cve_periodo PK
         int rango_perdida_esperada PK
         numeric total
     }
 
     %% Entidad Distribucion_Tarjetas_Pago_Realizado
     Distribucion_Tarjetas_Pago_Realizado {
-        string cve_institucion PK, FK "cve_institucion"
-        int cve_periodo PK, FK "cve_periodo"
+        string cve_institucion PK
+        int cve_periodo PK
         int rango_pago_realizado_vs_no_intereses PK
         numeric total
     }
@@ -52,8 +52,7 @@ erDiagram
 
     %% Entidad Catalogo_Conceptos
     Catalogo_Conceptos {
-        string idconcepto PK, FK "idconcepto"
-        string nombre_concepto
+        int idconcepto PK, FK "idconcepto"
         string descripcion_concepto
     }
 
