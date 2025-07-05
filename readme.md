@@ -12,3 +12,4 @@ Este repositorio se creó para la materia de base de datos relacionales, que imp
 - [Tarea 2](/Tarea%202/Actividad%202.md)
 - [Tarea 3](/Tarea%203/Actividad%203.md)
 - [Tarea 4](/Tarea%204/Actividad%204.md)
+- [Tarea 5 y 6](/Tarea%205%20y%206/Actividad%206.md)
